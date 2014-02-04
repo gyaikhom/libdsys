@@ -23,7 +23,8 @@
 #AC_PREREQ(2.59)
 AC_INIT([libdsys/collect.c])
 
-# Get libdsys version fro VERSION
+# Get libdsys version from VERSION
+m4_include([m4/libdsys_get_version.m4])
 LIBDSYS_GET_VERSION(${srcdir}/m4, ${srcdir}/VERSION)
 
 echo \
