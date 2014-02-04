@@ -3,8 +3,8 @@
 ## Introduction
 
 This is a prototype implementation of the beta-channel message passing
-library based on the concepts of `Communication structures'. The
-programming model removes the inherent ambiguity of `process group'
+library based on the concepts of _Communication structures_. The
+programming model removes the inherent ambiguity of _process group_
 based message passing models, where a given communication pattern
 could be interpreted in different ways in order to fit the pattern
 into the progamming model. Beta-channels removes these concerns by
@@ -19,24 +19,26 @@ compiler, which automatically includes the necessary header files.
 These are generally named, `mpicc`. We shall configure our project
 accordingly.
 
-The following are the simplest steps to compile this project.
+The following are the steps to compile this project:
 
-$ CC=`which mpicc` ./configure
-$ make
-$ make install
+     $ CC=`which mpicc` ./configure
+     $ make
+     $ make install
 
 
 ## References
 
-* Gagarine Yaikhom, "Message Passing with Communication Structures",
-  Ph.D. Thesis, School of Informatics, University of Edinburgh, 2006.
+* Gagarine Yaikhom, _Message Passing with Communication Structures_,
+  [Ph.D. Thesis](https://www.era.lib.ed.ac.uk/handle/1842/921),
+  [School of Informatics](http://www.inf.ed.ac.uk),
+  University of Edinburgh, 2006.
 
-* Gagarine Yaikhom, "Shared Message Buffering without Intermediate
-  Memory Copy", Submitted to High-level Parallel Programming and
+* Gagarine Yaikhom, _Shared Message Buffering without Intermediate
+  Memory Copy_, Submitted to High-level Parallel Programming and
   Applications (HLPP 2005).
 
-* Gagarine Yaikhom, "Buffered Branching Channels with Rendezvous
-  Message Passing", Proceedings of the 23rd IASTED International
+* Gagarine Yaikhom, _Buffered Branching Channels with Rendezvous
+  Message Passing_, Proceedings of the 23rd IASTED International
   Conference on Parallel and Distributed Computing and Networks,
   February 15-17, Innsbruck, Austria, pp. 184-193, 2005.
 
