@@ -1,6 +1,4 @@
 /***************************************************************************
- * $Id: replicate.c,v 1.1 2004/10/25 09:34:50 project Exp $
- *
  *  Copyright  2004  Gagarine Yaikhom
  *  Copyright  2004  University of Edinburgh
  *  gyaikhom@gmail.com

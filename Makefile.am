@@ -2,8 +2,6 @@
 # Copyright (C) 2004, Gagarine Yaikhom
 # Copyright (C) 2004, University of Edinburgh 
 #
-# $Id: Makefile.am,v 1.4 2004/11/17 20:13:42 project Exp $
-#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2, or (at your option)

@@ -1,6 +1,4 @@
 /***************************************************************************
- * $Id: matrix_gen.c,v 1.1 2004/10/27 16:56:46 project Exp $
- *
  *  Copyright  2004  Gagarine Yaikhom
  *  Copyright  2004  University of Edinburgh
  *  gyaikhom@gmail.com
