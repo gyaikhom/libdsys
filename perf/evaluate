@@ -1,0 +1,17 @@
+#!/bin/bash
+
+mpirun -c 3 coll_bcast
+mpirun -c 5 coll_bcast
+mpirun -c 7 coll_bcast
+mpirun -c 9 coll_bcast
+
+mpirun -c 3 coll_gather
+mpirun -c 5 coll_gather
+mpirun -c 7 coll_gather
+mpirun -c 9 coll_gather
+
+mpirun -c 3 coll_scatter
+mpirun -c 5 coll_scatter
+mpirun -c 7 coll_scatter
+mpirun -c 9 coll_scatter
+

@@ -1,0 +1,61 @@
+#!/bin/sh
+# test_and_generate -- Use this script to run the benchmark, and generate
+# graph.
+#
+# Copyright (C) 2004, Gagarine Yaikhom
+# Copyright (C) 2004, University of Edinburgh
+#
+# $Id: test_and_generate,v 1.2 2004/11/15 18:30:32 project Exp $
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+# Change name of the benchmark results file.
+RESULTS_FILENAME=results
+
+# Run benchmark.
+mpirun -c 2 benchmark -- -p -P -r -R -l -L
+
+# Lam clean
+lamclean
+
+# Plot the graph.
+gnuplot master.gnuplot slave.gnuplot 
+
+# Generate document.
+latex result.tex 1> /dev/null
+dvips -o result.ps result.dvi 2> /dev/null
+
+# Move to directory.
+mkdir $RESULTS_FILENAME
+mv *.{dat,eps,ps,dvi,gnuplot} $RESULTS_FILENAME/
+
+# Compress the results.
+tar cvojf $RESULTS_FILENAME.tar.bz2 $RESULTS_FILENAME/ 1> /dev/null
+
+# Delete the directory.
+rm -Rf $RESULTS_FILENAME/
+
+# Delete temporary files.
+rm -f *.{log,aux}
+
+# end of file.
+
+
+
+
+
+
+
+
