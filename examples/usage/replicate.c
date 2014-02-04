@@ -3,7 +3,7 @@
  *
  *  Copyright  2004  Gagarine Yaikhom
  *  Copyright  2004  University of Edinburgh
- *  s0231576@sms.ed.ac.uk
+ *  gyaikhom@gmail.com
  ****************************************************************************/
 
 /*

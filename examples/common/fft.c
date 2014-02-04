@@ -3,7 +3,7 @@
  *
  *  Saturday June 12 00:57:02 2004
  *  Copyright  2004  Gagarine Yaikhom
- *  s0231576@sms.ed.ac.uk
+ *  gyaikhom@gmail.com
  ****************************************************************************/
 
 /*

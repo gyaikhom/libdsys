@@ -2,7 +2,7 @@
  * $Id$
  *
  *  Copyright  2004  Gagarine Yaikhom
- *  s0231576@sms.ed.ac.uk
+ *  gyaikhom@gmail.com
  ****************************************************************************/
 
 /*
