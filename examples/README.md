@@ -51,6 +51,7 @@ The following are example programs that demonstrate usage of the
 
 15. `reduce.c`
  Demonstrates usage of:
+
          1. `DSYS_ROLE_REDUCE_SUM`,
          2. `DSYS_ROLE_REDUCE_MUL`,
          3. `DSYS_ROLE_REDUCE_MIN`,
