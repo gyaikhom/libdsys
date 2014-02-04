@@ -42,4 +42,8 @@ The following are the steps to compile this project:
   Conference on Parallel and Distributed Computing and Networks,
   February 15-17, Innsbruck, Austria, pp. 184-193, 2005.
 
+## History
 
+I wrote the `libdsys` library and accompanying message passing
+applications as part of my doctoral research. A large portion of the
+work was completed in 2004.
