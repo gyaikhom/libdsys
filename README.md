@@ -1,12 +1,6 @@
-*********************************************************************
-*                                                                   *
-*   Beta-channels: Message Passing with Communication Structures.   *
-*                                                                   *
-*                       Gagarine Yaikhom                            *
-*                                                                   *
-*********************************************************************
+# Beta-channels: Message Passing with Communication Structures
 
-INTRODUCTION
+## Introduction
 
 This is a prototype implementation of the beta-channel message passing
 library based on the concepts of `Communication structures'. The
@@ -18,19 +12,32 @@ ensuring that any given communication pattern can be implemented
 immediately into a valid, and unique, implemenation without any
 modification to the communication pattern.
 
+## Compiling
 
-REFERENCES
+Some MPI implementations require applications to use an MPI wrapper
+compiler, which automatically includes the necessary header files.
+These are generally named, `mpicc`. We shall configure our project
+accordingly.
 
-[1] Gagarine Yaikhom, "Message Passing with Communication Structures",
-	Ph.D. Thesis, School of Informatics, University of Edinburgh, 2006.
+The following are the simplest steps to compile this project.
 
-[2] Gagarine Yaikhom, "Shared Message Buffering without Intermediate
-	Memory Copy", Submitted to High-level Parallel Programming and
-	Applications (HLPP 2005).
+$ CC=`which mpicc` ./configure
+$ make
+$ make install
 
-[3] Gagarine Yaikhom, "Buffered Branching Channels with Rendezvous
-	Message Passing", Proceedings of the 23rd IASTED International
-	Conference on Parallel and Distributed Computing and Networks,
-	February 15-17, Innsbruck, Austria, pp. 184-193, 2005.
+
+## References
+
+* Gagarine Yaikhom, "Message Passing with Communication Structures",
+  Ph.D. Thesis, School of Informatics, University of Edinburgh, 2006.
+
+* Gagarine Yaikhom, "Shared Message Buffering without Intermediate
+  Memory Copy", Submitted to High-level Parallel Programming and
+  Applications (HLPP 2005).
+
+* Gagarine Yaikhom, "Buffered Branching Channels with Rendezvous
+  Message Passing", Proceedings of the 23rd IASTED International
+  Conference on Parallel and Distributed Computing and Networks,
+  February 15-17, Innsbruck, Austria, pp. 184-193, 2005.
 
 
