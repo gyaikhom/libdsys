@@ -1,4 +1,4 @@
-/***************************************************************************
+g/***************************************************************************
  *  Copyright  2004  Gagarine Yaikhom
  *  Copyright  2004  University of Edinburgh
  *  s0231576@sms.ed.ac.uk
@@ -575,8 +575,6 @@ int __bc_internal_nmc12m_put(bc_nmc12m_t *q, int c) {
 
     bc_mutex_lock(&(q->lock));
 
-    /* 	printf("[%d] Putting\n", bc_rank); */
-
     /* Update variable pointer. */
     q->vptr.var += q->size;
     if (q->vptr.var == q->end)
@@ -593,13 +591,11 @@ int __bc_internal_nmc12m_put(bc_nmc12m_t *q, int c) {
             q->vptr.rcidx = i;
             bc_cond_broadcast(&(q->cond));
             bc_mutex_unlock(&(q->lock));
-            /* 			printf("[%d] Put\n", bc_rank); */
             return 0;
         }
         bc_cond_broadcast(&(q->cond));
         bc_cond_wait(&(q->cond), &(q->lock));
     }
-    /* 	printf("[%d] Put\n", bc_rank); */
     return 0;
 }
 
@@ -774,8 +770,6 @@ int __bc_internal_farmn_q_put(bc_farmn_q_t *q, int c) {
 
     bc_mutex_lock(&(q->lock));
 
-    /* 	printf("[%d] Putting\n", bc_rank); */
-
     /* Update variable pointer. */
     q->pptr.var += q->size;
     if (q->pptr.var == q->end)
@@ -792,13 +786,11 @@ int __bc_internal_farmn_q_put(bc_farmn_q_t *q, int c) {
             q->pptr.rcidx = i;
             bc_cond_broadcast(&(q->cond));
             bc_mutex_unlock(&(q->lock));
-            /* 			printf("[%d] Put\n", bc_rank); */
             return 0;
         }
         bc_cond_broadcast(&(q->cond));
         bc_cond_wait(&(q->cond), &(q->lock));
     }
-    /* 	printf("[%d] Put\n", bc_rank); */
     return 0;
 }
 
